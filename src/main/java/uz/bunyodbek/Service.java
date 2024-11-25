@@ -11,6 +11,8 @@ public class Service {
 
     List<User> userList = new ArrayList<>();
 
+    int javoblar=0;
+
     public void mainMethod() {
 
         System.out.println("""
@@ -45,7 +47,20 @@ public class Service {
                 String javob1=scannerString.nextLine();
                 if (javob1.equals("A")){
                     System.out.println(" Javob to'g'ri");
+                    javoblar+=20;
+                } else {
+                    System.out.println(" Noto'g'ri");
                 }
+                System.out.println(" 2. Savol \n "
+                + " Abstract class  ichida nechta usulda method yoziladi A) 1 ta B) 2 ta C) 3 ta D) 0 ta");
+                String javob2=scannerString.nextLine();
+                if (javob2.equals("B")){
+                    System.out.println(" Javob to'g'ri");
+                    javoblar+=20;
+                }else {
+                    System.out.println(" Noto'g'ri");
+                }
+                System.out.println(" Umumiy natija = " + javoblar);
             }
         }
     }
