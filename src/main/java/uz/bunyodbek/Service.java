@@ -60,6 +60,35 @@ public class Service {
                 }else {
                     System.out.println(" Noto'g'ri");
                 }
+                System.out.println("3. Savol \n Sikl operatorlari qaysilar A) if-else B) switch C) do , do-while , for");
+                String javob3=scannerString.nextLine();
+                if (javob3.equals("C")){
+                    System.out.println(" Javob to'g'ri");
+                    javoblar+=20;
+                }
+                else {
+                    System.out.println("Xato");
+                }
+
+                System.out.println(" 4.Savol \n  Shart operatori A) if-else B) do-while C) Interface D) break");
+                String javob4=scannerString.nextLine();
+                if (javob4.equals("A")){
+                    System.out.println(" To'g'ri ");
+                    javoblar+=20;
+                }
+                else {
+                    System.out.println("Xato!");
+                }
+
+                System.out.println(" 5. Savol \n ArrayListni boshlang'ich uzunligi nechiga teng? A) 0 B)10 C)15 D)22 ");
+                String javob5=scannerString.nextLine();
+                if (javob5.equals("B")){
+                    System.out.println(" To'g'ri");
+                    javoblar+=20;
+                }
+                else {
+                    System.out.println(" Xato ");
+                }
                 System.out.println(" Umumiy natija = " + javoblar);
             }
         }
@@ -67,8 +96,7 @@ public class Service {
 
     private void usermenu() {
 
-        System.out.println("""
-                                
+        System.out.println("""                
                 1.SignUp
                 2.SignIn
                 """);
